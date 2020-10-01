@@ -1,0 +1,10 @@
+@font-face {
+   font-family: 'themify';
+   font-display: swap;
+   src: url('themify/font.ttf');
+}
+@font-face {
+   font-family: 'fontawesome-webfont';
+   font-display: swap;
+   src: url('fontawesome-webfont/font.ttf');
+}
