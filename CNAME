@@ -1,1 +1,5 @@
-www.lemmaiot.com.ng
+$ dig www.lemmaiot.com.ng +nostats +nocomments +nocmd
+    > ;lemmaiot.com.ng.                     IN      A
+    > lemmaiot.coom.ng.              3592    IN      CNAME   lemmadm.github.io.
+    > lemmadm.github.io.      43192   IN      CNAME    185.199.109.153 .
+    >  185.199.109.153 .         22      IN      A       192.0.2.1
