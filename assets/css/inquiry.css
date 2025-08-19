@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0808F5 0%, #06066B 100%); }
+        .primary-blue { color: #0808F5; }
+        .primary-dark { color: #06066B; }
+        .accent-pink { color: #FF3366; }
+        .bg-primary-blue { background-color: #0808F5; }
+        .bg-primary-dark { background-color: #06066B; }
+        .bg-accent-pink { background-color: #FF3366; }
+        .form-step { display: none; }
+        .form-step.active { display: block; }
+        .step-indicator { transition: all 0.3s ease; }
+        .step-indicator.completed { background-color: #10B981; }
+        .step-indicator.active { background-color: #0808F5; }

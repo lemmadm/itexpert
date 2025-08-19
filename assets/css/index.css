@@ -1,0 +1,14 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0808F5 0%, #06066B 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .popular-badge { position: absolute; top: -10px; right: 20px; }
+        .scroll-smooth { scroll-behavior: smooth; }
+        .primary-blue { color: #0808F5; }
+        .primary-dark { color: #06066B; }
+        .accent-pink { color: #FF3366; }
+        .bg-primary-blue { background-color: #0808F5; }
+        .bg-primary-dark { background-color: #06066B; }
+        .bg-accent-pink { background-color: #FF3366; }

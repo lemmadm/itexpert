@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="assets/images/index-meta.jpg">
+    <meta property="og:image" content="assets/images/index-meta.jpg">
+    <meta name="twitter:title" content="Service Request - LemmaIoT Cloud Solutions">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <title>Service Request - LemmaIoT Cloud Solutions</title>
+
+    <link rel="stylesheet" href="assets/css/inquiry.css">
+
+    <meta property="og:title" content="LemmaIoT Cloud Solution" />
+    <meta property="og:description" content="LemmaIoT Cloud Solution - Service Request" />
+    <meta property="og:image" content="assets/images/index-meta.jpg" />
+    <meta property="og:url" content="https://www.lemmaiot.com.ng" />
+    <meta property="og:type" content="website"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lemma-blue': '#0808F7',
+                        'lemma-dark': '#06066B',
+                        'lemma-pink': '#FF3366'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.png" alt="LemmaIoT Logo" class="h-10 w-auto">
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">← Back to Home</a>
+                    <a href="tel:+2347083682007" class="bg-primary-blue text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">📞 Call Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Request Our Services</h1>
+            <p class="text-xl mb-6">Tell us about your business needs and we'll create a custom solution for you</p>
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 inline-block">
+                <p class="text-sm">⚡ Quick Response • 💬 Free Consultation • 🚀 Fast Delivery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Indicator -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex items-center justify-center space-x-4">
+            <div class="flex items-center">
+                <div id="step-1-indicator" class="step-indicator active w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center text-sm font-semibold">1</div>
+                <span class="ml-2 text-sm font-medium text-gray-700">Business Info</span>
+            </div>
+            <div class="w-12 h-1 bg-gray-300 rounded"></div>
+            <div class="flex items-center">
+                <div id="step-2-indicator" class="step-indicator w-8 h-8 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center text-sm font-semibold">2</div>
+                <span class="ml-2 text-sm font-medium text-gray-700">Service Selection</span>
+            </div>
+            <div class="w-12 h-1 bg-gray-300 rounded"></div>
+            <div class="flex items-center">
+                <div id="step-3-indicator" class="step-indicator w-8 h-8 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center text-sm font-semibold">3</div>
+                <span class="ml-2 text-sm font-medium text-gray-700">Project Details</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <form id="service-request-form">
+                <!-- Step 1: Business Information -->
+                <div id="step-1" class="form-step active">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Tell Us About Your Business</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Business Name *</label>
+                            <input type="text" id="business-name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your business name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Industry/Sector *</label>
+                            <select id="industry" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select your industry</option>
+                                <option value="retail">Retail & E-commerce</option>
+                                <option value="education">Education</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="restaurant">Restaurant & Food</option>
+                                <option value="events">Events & Entertainment</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="ngo">NGO/Non-profit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
+                            <input type="text" id="contact-name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Role/Position</label>
+                            <input type="text" id="position" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="e.g., CEO, Manager, Owner">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+234 xxx xxx xxxx">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Business Location *</label>
+                            <input type="text" id="location" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="City, State">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Current Website (if any)</label>
+                            <input type="url" id="current-website" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="https://yourwebsite.com">
+                        </div>
+                    </div>
+                    <div class="flex justify-end mt-8">
+                        <button type="button" onclick="nextStep()" class="bg-primary-blue text-white px-8 py-3 rounded-full hover:bg-primary-dark transition font-semibold">
+                            Next Step →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Service Selection -->
+                <div id="step-2" class="form-step">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">What Services Do You Need?</h2>
+                    <div id="service-error" class="hidden bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-center">
+                            <span class="text-red-600 mr-2">⚠️</span>
+                            <span class="text-red-800 font-medium">Please select at least one service to continue.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Starter Packs -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">🚀 Starter Pack Bundles</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="startup-cloud" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">Startup Cloud</span>
+                                        <span class="text-blue-600 font-bold">₦50,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Website + WhatsApp + Invoice template</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="business-cloud" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">Business Cloud</span>
+                                        <span class="text-blue-600 font-bold">₦180,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">3-page website + Chatbot + 3 templates</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="enterprise-cloud" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">Enterprise Cloud</span>
+                                        <span class="text-blue-600 font-bold">Custom</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Full e-commerce + AI + 5 templates</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Individual Services -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">🛠️ Individual Services</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Note:</strong> Individual prices shown are minimum expected prices. Final pricing may vary based on specific requirements and project complexity.</p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="business-registration" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">📋 Business Registration</span>
+                                        <span class="text-blue-600 font-bold">₦25,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">CAC registration, Tax ID, permits</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="branding-design" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">🎨 Branding & Design</span>
+                                        <span class="text-blue-600 font-bold">₦35,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Logo, brand identity, marketing materials</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="ai-automation" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">🤖 AI Automation</span>
+                                        <span class="text-blue-600 font-bold">₦75,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Chatbots, process automation</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="payment-integration" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">💳 Payment Integration</span>
+                                        <span class="text-blue-600 font-bold">₦35,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Paystack, Flutterwave, POS setup</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="digital-marketing" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">📱 Digital Marketing</span>
+                                        <span class="text-blue-600 font-bold">₦45,000</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Social media, SEO, Google My Business</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="services" value="cloud-solutions" class="sr-only peer">
+                                <div class="border-2 border-gray-200 rounded-lg p-4 peer-checked:border-blue-500 peer-checked:bg-blue-50 hover:border-gray-300 transition">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">☁️ Cloud Solutions</span>
+                                        <span class="text-blue-600 font-bold">₦20,000/mo</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Secure storage, backup, collaboration</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mt-8">
+                        <button type="button" onclick="prevStep()" class="bg-gray-300 text-gray-700 px-8 py-3 rounded-full hover:bg-gray-400 transition font-semibold">
+                            ← Previous
+                        </button>
+                        <button type="button" onclick="nextStep()" class="bg-primary-blue text-white px-8 py-3 rounded-full hover:bg-primary-dark transition font-semibold">
+                            Next Step →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Project Details -->
+                <div id="step-3" class="form-step">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Project Details & Timeline</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Project Description *</label>
+                            <textarea id="project-description" required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Describe your project goals, specific requirements, and what you want to achieve..."></textarea>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Timeline *</label>
+                                <select id="timeline" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP (Rush job)</option>
+                                    <option value="1-week">Within 1 week</option>
+                                    <option value="2-weeks">Within 2 weeks</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="flexible">Flexible timeline</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Budget Range *</label>
+                                <select id="budget" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-50k">Under ₦50,000</option>
+                                    <option value="50k-100k">₦50,000 - ₦100,000</option>
+                                    <option value="100k-200k">₦100,000 - ₦200,000</option>
+                                    <option value="200k-500k">₦200,000 - ₦500,000</option>
+                                    <option value="above-500k">Above ₦500,000</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Additional Requirements</label>
+                            <textarea id="additional-requirements" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Any specific features, integrations, or special requirements..."></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">How did you hear about us? *</label>
+                            <select id="referral-source" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select source</option>
+                                <option value="google">Google Search</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="referral">Friend/Business Referral</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="event">Event/Conference</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-3">ℹ️</div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900 mb-1">What happens next?</h4>
+                                    <ul class="text-sm text-blue-800 space-y-1">
+                                        <li>• We'll review your request within 2 hours</li>
+                                        <li>• Our team will call you for a free consultation</li>
+                                        <li>• We'll provide a detailed quote and timeline</li>
+                                        <li>• Project starts once you approve the proposal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mt-8">
+                        <button type="button" onclick="prevStep()" class="bg-gray-300 text-gray-700 px-8 py-3 rounded-full hover:bg-gray-400 transition font-semibold">
+                            ← Previous
+                        </button>
+                        <button type="submit" class="bg-accent-pink text-white px-8 py-3 rounded-full hover:opacity-90 transition font-semibold">
+                            🚀 Submit Request
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="mt-8 bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Need Help? Contact Us Directly</h3>
+            <div class="space-y-3">
+                <div class="flex items-center">
+                    <span class="text-2xl mr-3">📞</span>
+                    <div>
+                        <p class="font-medium">Call Us Now</p>
+                        <a href="tel:+2347083682007" class="text-blue-600 hover:text-blue-800">+234 (0) 708 368 2007</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-2xl mr-3">✉️</span>
+                    <div>
+                        <p class="font-medium">Email Us</p>
+                        <a href="mailto:info@lemmaiot.com.ng" class="text-blue-600 hover:text-blue-800">info@lemmaiot.com.ng</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-2xl mr-3">💬</span>
+                    <div>
+                        <p class="font-medium">WhatsApp</p>
+                        <a href="https://wa.me/2347083682007" class="text-blue-600 hover:text-blue-800">Chat with us instantly</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-8 max-w-md mx-4 text-center">
+            <div class="text-6xl mb-4">🎉</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Request Submitted Successfully!</h3>
+            <p class="text-gray-600 mb-6">Thank you for choosing LemmaIoT. We'll contact you within 2 hours to discuss your project.</p>
+            <div class="space-y-3">
+                <button onclick="closeModal()" class="w-full bg-primary-blue text-white py-3 rounded-full hover:bg-primary-dark transition">
+                    Close
+                </button>
+                <a href="index.html" class="block w-full bg-gray-100 text-gray-700 py-3 rounded-full hover:bg-gray-200 transition">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/inquiry.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97101d5c05fc3e9a',t:'MTc1NTUwNjUxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
